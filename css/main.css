@@ -1,0 +1,562 @@
+/* resetting browser values */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*  */
+
+/* first section and contents */
+.firstsection {
+    background-image: url(../images/artist-band-bass-92080.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
+
+.leftlogo {
+    background: #665C4C;
+    opacity: .7;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    left: 6%;
+}
+
+.leftlogo img {
+    filter: invert(100%);
+    width: 100px;
+}
+
+#originaltrombone {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* navbar */
+.mobilenav {
+    display: none;
+}
+
+.nav-bar {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    padding: 3px 10px;
+    font-size: 15px;
+    right: 6%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(102, 92, 76, .6);
+}
+
+#nav-link {
+    display: inline;
+    padding: 0 10px;
+}
+
+#nav-link a {
+    color: white;
+    opacity: .6;
+}
+
+#nav-link a:hover {
+    transition: .5s;
+    opacity: 1;
+}
+
+/*  */
+
+/* social icons */
+.socialicons {
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    text-align: center;
+    opacity: .7;
+}
+
+.socialicons i {
+    color: white;
+    padding-top: 20px;
+}
+
+/*  */
+.mobilehead {
+    display: none;
+}
+
+/* heading */
+.tagline {
+    position: absolute;
+    top: 50vh;
+    left: 6%;
+    text-align: left;
+    padding: 10px;
+}
+
+#taglineheading {
+    color: white;
+    font-weight: 700;
+    opacity: .7;
+    font-size: 50px;
+}
+
+#taglineheading span {
+    font-size: 70px;
+}
+
+/*  */
+
+/* arrow and animation */
+.arrowdown {
+    position: absolute;
+    bottom: 1vh;
+    left: 50%;
+    font-size: 40px;
+    opacity: .8;
+    animation-name: arrow1;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+.arrowdown a,
+.arrowup a {
+    color: white;
+}
+
+.arrowup {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 1vh;
+    font-size: 40px;
+    opacity: .8;
+    animation-name: arrow2;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow1 {
+    0% {}
+
+    50% {
+        bottom: -.1vh;
+    }
+}
+
+@keyframes arrow2 {
+    0% {}
+
+    50% {
+        top: .1vh;
+    }
+}
+
+/*  */
+
+/* second section and contents */
+.secondsection {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    padding: 10px;
+    width: 90%;
+}
+
+.whyusicons {
+    display: flex;
+    margin: 0 40px;
+    justify-content: center;
+}
+
+.whyusicons i,
+.costicons i {
+    padding-bottom: 40px;
+}
+
+#sectionhead {
+    text-align: center;
+    padding: 80px 0;
+    font-size: 52px;
+}
+
+.whyusdiscription {
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+.whyusheads,
+.costheads {
+    font-size: 30px;
+}
+
+.thirdsection {
+    background-image: url(../images/brass-depth-of-field-instrument-359995.jpg);
+    background-size: cover;
+    height: 100vh;
+    z-index: 90;
+    position: unset;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thirdsection h1 {
+    color: white;
+    opacity: .9;
+    width: 100%;
+}
+
+.fourthsection {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 90%;
+}
+
+.costheads {
+    padding: 5px 40px;
+}
+
+.costicons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#costcost {
+    font-size: 28px;
+}
+
+.selectcost {
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    color: white;
+    border-style: none;
+    border-radius: 4px;
+    opacity: .9;
+    margin-top: 30px;
+}
+
+.selectcost:hover {
+    opacity: 1;
+}
+
+#video {
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 300px;
+    opacity: .8;
+}
+
+.fifthsection {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/adult-artist-audience-759832.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+#aboutushead {
+    text-align: center;
+    padding: 80px 0px 10px 0px;
+    font-size: 52px;
+    color: white;
+    opacity: .9;
+}
+
+#aboutusdiscription {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .8;
+}
+
+#knowmore {
+    color: white;
+    font-size: 36px;
+    opacity: .7;
+    text-align: center;
+    padding: 30px;
+}
+
+#form {
+    text-align: center;
+    color: white;
+}
+
+#email {
+    width: 50%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 9px;
+    border: none;
+    text-align: center;
+    opacity: .9;
+}
+
+#submit {
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    color: black;
+    border-style: none;
+    border-radius: 4px;
+    opacity: .9;
+    margin-top: 30px;
+}
+
+#submit:hover {
+    opacity: 1;
+}
+
+#muhsin {
+    position: relative;
+    bottom: -75px;
+    left: 6%;
+    color: white;
+    opacity: .4;
+}
+
+/* responsive */
+@media (max-width: 780px) {
+    body {}
+
+    .nav-bar {
+        display: none;
+    }
+
+    .socialicons {
+        display: none;
+    }
+
+    .firstsection {
+        height: 100vh;
+    }
+
+    .arrowup,
+    .arrowdown {
+        display: none;
+    }
+
+    .tagline {
+        position: relative;
+        left: 0;
+        top: 70vh;
+
+
+    }
+
+    #taglineheading {
+        font-weight: 0;
+        opacity: .9;
+        font-size: 28px;
+    }
+
+    #taglineheading span {
+        font-size: 36px;
+    }
+
+    .leftlogo {
+        display: none;
+    }
+
+    .mobilenav {
+        z-index: 100;
+        display: inline-block;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mobilehead {
+        display: inline;
+        position: absolute;
+        top: 50px;
+        color: white;
+        left: 8px;
+    }
+
+    #mobiletrombone {
+        font-size: 24px;
+    }
+
+    .mobilehead img {
+        width: 90px;
+    }
+
+    .secondsection {
+        margin: 0;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .whyusicons {
+        padding: 0;
+    }
+
+    #sectionhead {
+        padding: 70px 0px 20px 0px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        font-size: 28px;
+    }
+
+    .whyusheads,
+    .costheads {
+        font-size: 24px;
+    }
+
+    .whyusdiscription {
+        padding: 40px 0;
+        font-size: 14px;
+    }
+
+    .whyusicons {
+        flex-flow: column;
+    }
+
+    .thirdsection {
+        height: auto;
+    }
+
+    .videoember {
+        width: 100vw;
+    }
+
+    .howitworks {
+        width: 100%;
+    }
+
+    .embed {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #video {
+        opacity: 1;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        width: 90%;
+    }
+
+    .fourthsection {
+        margin-bottom: 40px;
+        height: auto;
+        width: 100%;
+    }
+
+    .costicons {
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .six,
+    .nine,
+    .twelve {
+        border: rgb(0, 0, 0) 1px solid;
+        width: 50%;
+        border-radius: 10px;
+        margin: 10px auto;
+        padding: 20px;
+
+    }
+
+    .costicons i {
+        font-size: 32px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    #costcost {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .costheads {
+        padding: 0;
+    }
+
+    .selectcost {
+        width: auto;
+        height: auto;
+        padding: 5px 8px;
+        opacity: 1;
+    }
+
+    .fifthsection {
+        height: auto;
+        padding-bottom: 30px;
+
+    }
+
+    #aboutushead {
+        font-size: 32px;
+    }
+
+    #aboutusdiscription {
+        font-size: 14px;
+        width: 60%;
+    }
+
+    #knowmore {
+        font-size: 24px;
+
+    }
+
+    #email {
+        width: 60%;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 2px;
+        height: 25px;
+    }
+
+    #submit {
+        width: 15%;
+        margin-top: 10px;
+    }
+
+    #muhsin {
+        display: none;
+    }
+}
